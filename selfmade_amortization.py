@@ -2,12 +2,12 @@
 import numpy as np
 import datetime
 from dateutil.relativedelta import relativedelta  # for adding time in months/years
-from tabulate import tabulate
+
 
 # known values ###########################################
 principal = 1333  # this is the starting point
-interest = 3.15  # yearly - convert to monthly
-int_per_month = (3.15/100) / 12
+interest = 3.15  # yearly interest (convert to monthly interest)
+int_per_month = (interest/100) / 12
 months = 89
 month_pmt = 16.85
 Year = 2020
